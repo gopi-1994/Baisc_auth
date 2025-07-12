@@ -7,7 +7,7 @@ import bcrypt
 app = FastAPI()
 
 security = HTTPBasic()
-username = "gopi"
+username = "admin"
 password = "password"
 hash = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
 print(hash)
